@@ -2,18 +2,32 @@ main{
   width: 100%;
   height: 100vh;
 }
+.borda{
+  width: 100%;
+  height: 70%;
+  background: #868686b6;
+  border-radius: 12px;
+  transition: 1s;
+}
+.borda:hover{
+  transform: translateY(-5px);  
+}
 .fotocs2{
   width: 50%;
   height: 100vh;
   float: left;
   background: #e77305;
+  background-image:  linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('./assets/cs2-.jpg') ;
+  background-size: cover;        
+  background-position: center; 
+  background-repeat: no-repeat;
 }
 .login{
+  padding: 5%;
   width: 50%;
   height: 100vh;
   float: left;
-  background: #757575;
-  
+  background: #d5d3d3;
 }
 h1{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -25,7 +39,7 @@ h1{
   width: 45%;
   border: none;
   margin-left: 28.5%;
-  margin-top: 60px;
+  margin-top: 10px;
   text-align: center;
   padding: 15px;
   border-radius: 10px;
@@ -33,20 +47,21 @@ h1{
   color: rgb(255, 255, 255);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1rem;
+  font-weight: bold;
   box-shadow: 0px 10px 15px #e77305;
-  transition: 2s;
+  transition: 1s;
 }
-.usua:hover{
+.usua:focus{
   transform:translateY(-7px)
 }
 .usua:focus{
   outline: none;
 }
 .senha{
-   width: 45%;
+  width: 45%;
   border: none;
   margin-left: 28.5%;
-  margin-top: 60px;
+  margin-top: 30px;
   text-align: center;
   padding: 15px;
   border-radius: 10px;
@@ -54,12 +69,120 @@ h1{
   color: rgb(255, 255, 255);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1rem;
+  font-weight: bold;
   box-shadow: 0px 10px 15px #e77305;
-  transition: 2s;
+  transition: 1s;
 }
-.senha:hover{
+.senha:focus{
   transform: translateY(-7px);
 }
 .senha:focus{
   outline: none;
+}
+.entrar{
+  width: 55%;
+  border: none;
+  margin-left: 23%;
+  margin-top: 30px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: rgb(255, 255, 255);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.3s ease;
+  background: #e77305;
+  border: 1px solid #07070786; 
+}
+.entrar:focus{
+  outline: none;
+}
+.duvida{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 15px;
+  
+}
+/*DESKTOP*/
+@media (min-width: 1025px){
+
+  .fotocs2{
+    width: 50%;
+    float: left;
+  }
+
+  .login{
+    width: 50%;
+    float: left;
+  }
+
+}
+/*TABLET*/
+@media (min-width: 768px) and (max-width: 1024px){
+
+  .fotocs2{
+    width: 100%;
+    height: 40vh;
+    float: none;
+  }
+
+  .login{
+    width: 100%;
+    height: 60vh;
+    float: none;
+  }
+
+  h1{
+    font-size: 2.5rem;
+    margin-top: 40px;
+  }
+
+  .usua, .senha{
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .entrar{
+    width: 70%;
+    margin-left: 15%;
+  }
+
+}
+/*CELULAR*/
+@media (max-width: 767px){
+
+  .fotocs2{
+    display: none; /* some com a imagem */
+  }
+
+  .login{
+    width: 100%;
+    height: 100vh;
+    float: none;
+    padding: 20px;
+  }
+
+  h1{
+    font-size: 2rem;
+    margin-top: 30px;
+  }
+
+  .borda{
+    height: auto;
+    padding: 20px;
+  }
+
+  .usua, .senha{
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .entrar{
+    width: 90%;
+    margin-left: 5%;
+  }
+
 }
