@@ -17,7 +17,7 @@ main{
   height: 100vh;
   float: left;
   background: #e77305;
-  background-image:  linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('./assets/cs2-.jpg') ;
+  background-image:  linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url('./assets/cs2-.jpg') ;
   background-size: cover;        
   background-position: center; 
   background-repeat: no-repeat;
@@ -27,7 +27,7 @@ main{
   width: 50%;
   height: 100vh;
   float: left;
-  background: #d5d3d3;
+  background: linear-gradient(135deg, #E58716, #070B29);
 }
 h1{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
